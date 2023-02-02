@@ -8,12 +8,12 @@
     </head>
     <body>
     <?php
-        function word_digit($word) 
+        function wordDigit($word)
         {
-            $warr = explode(';',$word);
+            $warr = explode(';', $word);
             $result = '';
-            foreach($warr as $value){
-                switch(trim($value)){
+            foreach ($warr as $value) {
+                switch (trim($value)) {
                     case 'zero':
                         $result .= '0';
                         break;
@@ -43,15 +43,16 @@
                         break;
                     case 'nine':
                         $result .= '9';
-                        break;    
+                        break;
+                    
                 }
             }
             return $result;
         }
-
-        echo word_digit("zero;three;five;six;eight;one")."\n";
-        echo word_digit("seven;zero;one")."\n";
+        
+        echo wordDigit("zero;three;five;six;eight;one")."\n";
+        echo wordDigit("seven;zero;one")."\n";
+       
     ?>
-
     </body>
 </html>

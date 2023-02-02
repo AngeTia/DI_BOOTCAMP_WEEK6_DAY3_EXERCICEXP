@@ -7,20 +7,19 @@
         <title>Document</title>
     </head>
     <body>
-    <?php
-    function check_vote() //function has been declared
-    {
-        $name = "Rakesh";
-        $age = 19;
-        if ($age >= 18) 
+        <?php
+        function checkVote() //function has been declared
         {
-            echo $name . ", you Are Eligible For Vote";
-        } else {
-            echo $name . ", you are not eligible for vote. ";
+            $name = "Rakesh";
+            $age = 19;
+            if ($age >= 18) {
+                echo $name . ", you Are Eligible For Vote";
+            } else {
+                echo $name . ", you are not eligible for vote. ";
+            }
         }
-    }
-    check_vote(); //function has been called
+        checkVote(); //function has been called
 
-    ?>
+        ?>
     </body>
 </html>
